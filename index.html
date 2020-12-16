@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Scheduler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<script LANGUAGE="JavaScript" type="text/javascript">
+    function display() {
+      DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=500,height=310')
+      message = "<b>Dr. Meenakshi Maheshwari Has Invited You to <br>Scheduled Zoom Meeting</b>"
+      message += "<br> <br> <b>Date: </b>" + document.form1.Date.value;
+      message += "<br><b>Time:</b>" + document.form1.Time.value;
+      message += " <br> <b>Topic: </b>" + document.form1.Topic.value;
+      message += " <br><br> <b>Link: </b>"
+      message += " <br><b>https://us04web.zoom.us/j/9180935435?pwd=MG51N3JUYndJLzZ2Y3VWMjU4c25oZz09 </b>"
+      message += " <br><br> <b>Meeting Id: 918 093 5435 </b>"
+      message += " <br> <b>Passcode: 278903 </b>"
+
+      DispWin.document.write(message);
+      
+    }
+  </script>
+<body>
+    <h1 align="center">Zoom Meeting Scheduler</h1>
+    <div class="container">
+    <form name="form1">
+        <div class="form-group">
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Date" NAME="Date">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Time"  NAME="Time">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Topic"  NAME="Topic">
+          </div>
+          
+          <input TYPE="BUTTON" VALUE="Schedule Zoom Meeting" onClick="display();">
+
+      </form>
+</div>
+<br>
+<div class="alert alert-info" role="alert">
+    <b><center>CopyRight@2020 Arjun Maheshwari</center></b>
+  </div>
+</body>
+</html>
